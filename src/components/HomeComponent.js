@@ -3,29 +3,20 @@ import SimpleImageSlider from "react-simple-image-slider";
 import { Jumbotron } from 'reactstrap';
 import SplitterLayout from 'react-splitter-layout';
 import 'react-splitter-layout/lib/index.css';
+import Logo from './logoComponet';
 
 class Home extends Component {
     render() {
         const images = [
-            { url: "images/1.jpg" },
-            { url: "images/2.jpg" },
-            { url: "images/3.jpg" },
-            { url: "images/4.jpg" },
-            { url: "images/5.jpg" },
-            { url: "images/6.jpg" },
-            { url: "images/7.jpg" },
+            { url: "assets/images/a1.jpg" },
+            { url: "assets/images/a2.jpg" },
+            { url: "assets/images/a4.jpg" },
+            { url: "assets/images/a5.jpg" },
         ];
 
         return (
             <div >
-                <div >
-                <SimpleImageSlider
-                    width={1350}
-                    height={504}
-                    images={images}
-                />
-                </div>
-                <Jumbotron>
+                 <Jumbotron>
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
@@ -35,12 +26,26 @@ class Home extends Component {
                         </div>
                     </div>
                 </Jumbotron>
+                <div className="col-md-8 mx-auto">
+                <SimpleImageSlider
+                    width={856}
+                    height={504}
+                    images={images}
+                />
+                </div>
+               <div >
                 <SplitterLayout>
-                    <div>Pane 1
+                    <div>
+
+                        <h2>NEWS / NOTICES </h2>
                             
                     </div>
-                    <div>Pane 2</div>
+                    <div>
+                        <h2>OUR RECRUITERS</h2>
+                        <Logo/>
+                    </div>
                 </SplitterLayout>
+                </div>
             </div>
             
         );
