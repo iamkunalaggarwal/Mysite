@@ -34,8 +34,8 @@ class Logo extends Component {
     render() {
         const logo = this.state.companies.map((comp) => {
             return (
-            <div  className="col-12 col-md-5 m-1">
-              <Card key={comp.id} className="col-12 mt-5">
+            <div  className="col-12 col-md-3 m-10">
+              <Card key={comp.id} className="col-12">
                   <CardImg width="100%" src={comp.image} />
               </Card>
               </div>
