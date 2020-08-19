@@ -16,7 +16,7 @@ class Home extends Component {
 
         return (
             <div >
-                <Col className="text-dark text-center py-5 px-4 " style={{ backgroundImage: `url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg)` }}>    
+                <Col className="text-dark text-center py-3 px-4 " style={{ backgroundImage: `url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg)` }}>    
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
